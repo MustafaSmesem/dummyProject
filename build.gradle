@@ -16,10 +16,6 @@ repositories {
     maven {
         name = "GitHubPackages"
         url = "https://maven.pkg.github.com/MustafaSmesem/packages"
-        credentials {
-            username = "MustafaSmesem"
-            password = "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"
-        }
     }
 }
 
