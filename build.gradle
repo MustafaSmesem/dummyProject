@@ -18,10 +18,6 @@ repositories {
     maven {
         name = "GitHubPackages"
         url = "https://maven.pkg.github.com/MustafaSmesem/core-sdk"
-        credentials {
-            username = "MustafaSmesem"
-            password = "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"
-        }
     }
 }
 
