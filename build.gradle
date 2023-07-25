@@ -2,26 +2,33 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.1.1'
     id 'io.spring.dependency-management' version '1.1.0'
+    id 'io.freefair.lombok' version '8.1.0'
 }
 
 group = 'com.joumer'
 version = '0.0.1'
 
 java {
-    sourceCompatibility = '17'
+    sourceCompatibility = '20'
+    targetCompatibility = '20'
 }
 
 repositories {
     mavenCentral()
     maven {
         name = "GitHubPackages"
-        url = "https://maven.pkg.github.com/MustafaSmesem/packages"
+        url = "https://maven.pkg.github.com/MustafaSmesem/core-sdk"
+        credentials {
+            username = "MustafaSmesem"
+            password = "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"
+        }
     }
 }
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'co.mobileaction:mobileaction-dummy-library:1.0.5'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
